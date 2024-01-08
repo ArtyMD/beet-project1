@@ -1,0 +1,416 @@
+// Main colors
+$blue-purple: #5474fd;
+
+//Font Start
+
+@font-face {
+  font-family: josefinSans;
+  src: url(/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: aleo;
+  src: url(/fonts/Aleo/Aleo-VariableFont_wght.ttf);
+}
+
+//Font END
+*{
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  max-width: 1770px;
+  background-color: gainsboro;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1770px;
+  height: 820px;
+  flex-shrink: 0;
+  background-image: url(/img/header.png);
+  background-repeat: no-repeat;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  input {
+    border-radius: 0;
+    outline: none;
+    border: none;
+    width: 503px;
+    height: 63px;
+    flex-shrink: 0;
+    padding: 0;
+    &[placeholder="Search Your Travel Destination"] {
+      color: #999;
+      text-align: center;
+      padding-left: 50px;
+      font-family: josefinSans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 2.8px;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: Aleo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    align-items: center;
+    background-color: $blue-purple;
+    color: white;
+    width: 153px;
+    height: 63px;
+    flex-shrink: 0;
+    border: none;
+    height: 100%;
+  }
+}
+
+nav {
+  background-color: $blue-purple;
+  display: flex;
+  padding: 32px 334px;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      padding: 0 21px;
+      font-family: aleo;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      list-style-type: none;
+      color: white;
+    }
+  }
+}
+
+.logo {
+  font-family: josefinSans;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.heading {
+  margin-bottom: 11px;
+  color: #fff;
+  text-align: center;
+  font-family: josefinSans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 54.167% */
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+}
+.subHeading {
+  margin-bottom: 48px;
+  color: #fff;
+  text-align: center;
+  font-family: josefinSans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 118.182% */
+  letter-spacing: 6.82px;
+}
+
+.scroll-down {
+  margin-top: 107px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: josefinSans;
+  i {
+    width: 17px;
+    height: 11px;
+  }
+  span {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: 2.8px;
+  }
+}
+// Header END
+
+//1st section start
+.intro {
+  padding: 115px 330px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/img/Rectangle\ 41444.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__text {
+    width: 50%;
+    h3 {
+      color: #fff;
+      font-family: aleo;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
+    p {
+      color: #e8e8e8;
+      font-family: josefinSans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 1.6px;
+    }
+  }
+  &__images {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 350px;
+      height: 220px;
+    }
+    &--second {
+      margin-top: 10px;
+      align-self: flex-end;
+    }
+  }
+}
+.button {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  width: 200px;
+  padding: 20px 40px;
+  flex-shrink: 0;
+  background-color: $blue-purple;
+  color: #fff;
+  font-family: aleo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.icon-flow {
+  background-image: url(/img/Shape\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 90px;
+    flex-direction: column;
+    color: #e8e8e8;
+    text-align: center;
+    font-family: aleo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+.fa-magnifying-glass {
+  color: #5474fd;
+}
+.fa-circle-check {
+  color: #ff6363;
+}
+.fa-thumbs-up {
+  color: #00a2ff;
+}
+.icon-style {
+  background-color: #333;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+}
+
+.property1,
+.property2,
+.property3 {
+  background-image: url(/img/Rectangle\ 414\ 45.png);
+  padding: 100px 328px;
+  &__card {
+    padding: 50px 30px;
+    width: 543px;
+    height: 374px;
+    flex-shrink: 0;
+    background-color: #232323;
+    opacity: 0.9;
+    & span {
+      color: #e8e8e8;
+      font-family: josefinSans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 130% */
+      letter-spacing: 1.5px;
+    }
+    & h3 {
+      color: #fff;
+      font-family: josefinSans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 130% */
+      text-transform: uppercase;
+    }
+    & p {
+      color: #e8e8e8;
+      font-family: josefinSans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 162.5% */
+    }
+  }
+}
+.property2 {
+  background-image: url(/img/Rectangle\ 41445.png);
+}
+.right {
+  display: flex;
+  justify-content: end;
+}
+.property3 {
+  background-image: url(/img/Rectangle\ 4142\ 1.png);
+  &__card-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    & img {
+      object-fit: contain;
+    }
+  }
+}
+.fa-quote-left {
+  color: $blue-purple;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-right: 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & h3 {
+    color: #fff;
+    text-align: center;
+    font-family: aleo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 91px;
+  }
+}
+.property3__card {
+  padding: 20px;
+  height: auto;
+  flex-grow: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 122px 0 46px 0;
+  color: white;
+  background-color: #232323;
+  & a {
+    color: #fff;
+    font-family: josefinSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  & p {
+    color: #fff;
+    text-align: center;
+    font-family: josefinSans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+  }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+  & a {
+    color: #e8e8e8;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    &:hover {
+      color: $blue-purple;
+    }
+  }
+}
