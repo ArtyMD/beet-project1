@@ -13,8 +13,9 @@ $blue-purple: #5474fd;
 }
 
 //Font END
-*{
-    scroll-behavior: smooth;
+
+* {
+  scroll-behavior: smooth;
 }
 body {
   margin: 0 auto;
@@ -28,6 +29,14 @@ header {
   flex-direction: column;
   width: 100%;
 }
+
+label {
+    color: white;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
 
 .hero {
   display: flex;
@@ -113,6 +122,9 @@ nav {
       text-transform: uppercase;
       list-style-type: none;
       color: white;
+      &:hover {
+        color: orange;
+      }
     }
   }
 }
@@ -398,9 +410,9 @@ footer {
 }
 
 .socials {
-    display: flex;
-    justify-content: space-around;
-    width: 200px;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
   & a {
     color: #e8e8e8;
     text-align: center;
@@ -414,3 +426,94 @@ footer {
     }
   }
 }
+
+//MEDIA QUERIES
+
+@media only screen and (max-width: 450px) {
+  .search-bar {
+    width: 90vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .search-button {
+    margin-top: 20px;
+    padding: 25px 100px;
+    height: 0 !important;
+    font-size: 1.5em !important;
+    & i {
+      margin-left: 10px;
+    }
+    &:hover {
+        background-color: orange;
+    }
+  }
+  .hero input {
+    width: auto;
+    padding: 0px;
+    font-size: 10px;
+  }
+  nav {
+    background-color: $blue-purple;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+  }
+  .logo {
+    padding: 20px 20px;
+  }
+  ul {
+    padding: 0;
+    & a {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  .intro {
+    flex-direction: column;
+    padding: 0px;
+    &__text {
+      width: 90%;
+    }
+    &__images {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .button {
+    margin-bottom: 50px;
+    align-self: center;
+  }
+  .icon-flow {
+    flex-direction: column;
+    background-image: none;
+  }
+  .property1,
+  .property2,
+  .property3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    &__card {
+      width: auto;
+      height: auto;
+    }
+
+  }
+  .right, .center, .property3__card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero input[placeholder="Search Your Travel Destination"] {
+    font-size: 15px; 
+    padding: 0;
+    ;
+  }
+  input {
+    width: 100% !important;
+  }
+}
+
+//MEDIA QUERIES END
